@@ -15,7 +15,7 @@ Then the session store instance can be created by using `new SessionStore(option
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const expressSession = require('express-session');
-const SessionStore = require('express-session-sequelize')(expressSession.Store);
+const SessionStore = require('@electerm/express-session-sequelize')(expressSession.Store);
 
 const Sequelize = require('sequelize');
 const myDatabase = new Sequelize('database', 'username', 'password', {
